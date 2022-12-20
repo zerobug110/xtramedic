@@ -1,0 +1,44 @@
+// colors
+
+// #FFFFFF white
+// #E5E5E5 grey
+// #5165F7 blue btns
+
+.layout {
+  background-color: #E5E5E5;
+  display: grid;
+  grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
+  grid-template-rows: repeat(8,[row-start] minmax(min-content, 14rem))[rwo-end];
+}
+
+.container {
+  // display: grid;
+  // grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
+  // position: relative;
+
+}
+
+
+.side-nav {
+  grid-column: full-start / col-start 2;
+  height: 100vh;
+  grid-row: row-start 1 / row-end;
+
+  z-index: 3;
+  background-color: #FFFFFF;
+  border-right: .1rem solid #a0a0a033;
+
+
+
+
+}
+
+.top-nav{
+  grid-column: col-start 2 / full-end;
+  height: 6rem;
+  background-color: #FFFFFF;
+  // display: none;
+}
+
+
+
