@@ -1,0 +1,28 @@
+.side-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 6rem;
+  padding: 0 1rem;
+
+  &__search {
+
+    &--input {
+      border-radius: .2rem;
+      position: relative;
+      .input {
+        border-radius: 1rem;
+        border: .1rem solid #E5E5E5;
+        background-color: blue;
+
+      }
+
+      .magnifying-glass {
+        position: absolute;
+        background-color: red;
+
+      }
+    }
+  }
+}

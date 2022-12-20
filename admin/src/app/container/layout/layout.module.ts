@@ -12,6 +12,10 @@ import { SideNavComponent } from './side-nav/side-nav.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TopNavComponent,
+    SideNavComponent
   ]
 })
 export class LayoutModule { }
