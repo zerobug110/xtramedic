@@ -7,17 +7,16 @@
 .layout {
   background-color: #E5E5E5;
   display: grid;
-  grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
-  grid-template-rows: repeat(8,[row-start] minmax(min-content, 14rem))[rwo-end];
+  grid-template-columns: [full-start]5rem 1fr repeat(10,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
+  grid-template-rows: repeat(9,[row-start] minmax(min-content, 10vh))[rwo-end];
 }
 
 .container {
-  // display: grid;
-  // grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
-  // position: relative;
+  overflow-Y: scroll;
+  background-color: red;
 
+  grid-column: col-start 2 / col-end ;
 }
-
 
 .side-nav {
   grid-column: full-start / col-start 2;
@@ -28,16 +27,12 @@
   background-color: #FFFFFF;
   border-right: .1rem solid #a0a0a033;
 
-
-
-
 }
 
 .top-nav{
   grid-column: col-start 2 / full-end;
   height: 6rem;
   background-color: #FFFFFF;
-  // display: none;
 }
 
 
