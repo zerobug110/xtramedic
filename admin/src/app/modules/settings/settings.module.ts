@@ -9,4 +9,4 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class TransctionsModule { }
+export class SettingsModule { }

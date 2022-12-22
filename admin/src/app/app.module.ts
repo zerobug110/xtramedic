@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {LayoutModule} from './container/layout/layout.module'
+import {LayoutModule} from './layout/layout.module';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent,
+    // CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LayoutModule
+  ],
+  exports: [
   ],
   providers: [],
   bootstrap: [AppComponent]
