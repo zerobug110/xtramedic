@@ -1,4 +1,4 @@
-import { DashboardComponent } from './modules/dashboard/dashboard/dashboard.component';
+import { DashboardComponent } from './modules/dashboard/page/dashboard/dashboard.component';
 // import { DashbaordPageComponent } from './dashboard/dashbaord-page/dashbaord-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';

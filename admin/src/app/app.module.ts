@@ -10,7 +10,6 @@ import { CardComponent } from './components/card/card.component';
   declarations: [
     AppComponent,
     CardComponent,
-    // CardComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +17,7 @@ import { CardComponent } from './components/card/card.component';
     LayoutModule
   ],
   exports: [
+    CardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
