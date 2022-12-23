@@ -1,9 +1,5 @@
-// colors
 
-// #FFFFFF white
-// #E5E5E5 grey
-// #5165F7 blue btns
-
+@import '../styles/variables';
 .layout {
   height: 100vh;
   background-color: #E5E5E5;
@@ -22,10 +18,13 @@
   grid-column: full-start / col-start 2;
   height: 100vh;
   grid-row: row-start 1 / row-end;
+  background-color: $white;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0 .1rem .2rem -.1rem, rgba(0, 0, 0, 0.3) 0 .1rem .2rem -.1rem;
 
   z-index: 3;
-  background-color: #FFFFFF;
-  border-right: .1rem solid #a0a0a033;
+  background-color: $whte;
+  border-right: .1rem solid $grey;
 
 }
 
