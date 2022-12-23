@@ -5,16 +5,17 @@
 // #5165F7 blue btns
 
 .layout {
+  height: 100vh;
   background-color: #E5E5E5;
+
   display: grid;
   grid-template-columns: [full-start]5rem 1fr repeat(10,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
   grid-template-rows: repeat(9,[row-start] minmax(min-content, 10vh))[rwo-end];
-}
 
-.container {
-  // overflow-Y: scroll;
+  .container {
+    grid-column: col-start 2 / full-end;
+  }
 
-  grid-column: col-start 2 / col-end ;
 }
 
 .side-nav {

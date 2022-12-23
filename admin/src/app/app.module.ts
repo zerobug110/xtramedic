@@ -4,20 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {LayoutModule} from './layout/layout.module';
-import { CardComponent } from './components/card/card.component';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
-  ],
-  exports: [
-    CardComponent,
+    LayoutModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,24 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
+  gap: 2rem;
+  margin-top: 5rem;
+  overflow-y: scroll;
+
+  &__stats {
+    grid-column: col-start 1 / col-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+
+  }
+
+  &__store-summary {
+    grid-column: col-start 1 / col-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+  }
+}
