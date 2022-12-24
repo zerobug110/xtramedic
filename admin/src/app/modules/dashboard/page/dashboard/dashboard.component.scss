@@ -1,3 +1,4 @@
+@import '../../../../../assets/styles/_variables';
 .dashboard {
   display: grid;
   grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
@@ -20,7 +21,7 @@
       .icon {
         width: 6rem;
         height: 5rem;
-        background-color: blue;
+        background-color: $blue;
         border-radius: 50%;
       }
 
@@ -32,6 +33,7 @@
 
 
         &__description {
+          color: $dark-grey;
           font-size: 1.6rem;
           text-transform: capitalize;
 
@@ -39,9 +41,17 @@
 
         &__number {
           font-size: 3rem;
+          font-weight: 550;
         }
       }
     }
+    &--see-details {
+      color: $dark-grey;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      color: $blue;
+    }
+
   }
 
   &__store-summary {

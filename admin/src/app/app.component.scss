@@ -1,5 +1,5 @@
 
-@import '../styles/variables';
+@import '../assets/styles/_variables';
 .layout {
   height: 100vh;
   background-color: #E5E5E5;
@@ -23,7 +23,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0 .1rem .2rem -.1rem, rgba(0, 0, 0, 0.3) 0 .1rem .2rem -.1rem;
 
   z-index: 3;
-  background-color: $whte;
+  background-color: $white;
   border-right: .1rem solid $grey;
 
 }
@@ -31,7 +31,7 @@
 .top-nav{
   grid-column: col-start 2 / full-end;
   height: 6rem;
-  background-color: #FFFFFF;
+  background-color: $white;
 }
 
 
