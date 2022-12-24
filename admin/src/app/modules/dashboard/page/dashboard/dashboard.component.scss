@@ -1,16 +1,16 @@
 @import '../../../../../assets/styles/_variables';
 .dashboard {
   display: grid;
-  grid-template-columns: [full-start]5rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  5rem[full-end];
+  grid-template-columns: [full-start]2rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  2rem[full-end];
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   overflow-y: scroll;
 
   &__stats {
     grid-column: col-start 1 / col-end;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1rem;
 
     &--info {

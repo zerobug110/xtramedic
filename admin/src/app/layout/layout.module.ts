@@ -11,7 +11,7 @@ import { SharedModule } from '../modules/shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     TopNavComponent,
