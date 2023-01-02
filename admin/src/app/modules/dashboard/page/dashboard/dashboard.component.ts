@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ColumnMode } from '@swimlane/ngx-datatable';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  rows: any;
+  expanded = {};
+  timeout: any;
+
+  ColumnMode = ColumnMode;
+
+  constructor() {}
+
+
+  getRowHeight(row: { height: any; }) {
+    return row.height;
+  }
 
   ngOnInit(): void {
   }
+
 
 }

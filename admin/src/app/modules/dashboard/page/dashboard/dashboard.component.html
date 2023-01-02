@@ -50,6 +50,25 @@
   <div class="dashboard__store-summary">
       <app-card>
         <div class="expiring-list">expiring list</div>
+        <div class="data-table">
+          <div>
+            <ngx-datatable
+            class="material fullscreen"
+            [columnMode]="ColumnMode.force"
+            [headerHeight]="70"
+            [footerHeight]="0"
+            [rowHeight]="50"
+            [scrollbarV]="false"
+            [scrollbarH]="false"
+            [rows]="rows"
+          >
+            <ngx-datatable-column name="Drug" ></ngx-datatable-column>
+            <ngx-datatable-column name="Type" ></ngx-datatable-column>
+            <ngx-datatable-column name="Expired in "></ngx-datatable-column>
+            <ngx-datatable-column name="quantity"></ngx-datatable-column>
+          </ngx-datatable>
+          </div>
+        </div>
       </app-card>
       <app-card>
         <div class="expiring-list">recent orders</div>
