@@ -5,7 +5,6 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -15,8 +14,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     CommonModule,
     BrowserModule,
     SharedModule,
-    NgxDatatableModule,
-    NgxChartsModule,
+    NgxDatatableModule
 
 
   ],

@@ -6,8 +6,8 @@
       <div class="dashboard__stats--info">
         <div class="icon"></div>
         <div class="stats">
-          <div class="stats__description">total customers</div>
           <div class="stats__number">77</div>
+          <div class="stats__description">total customers</div>
         </div>
       </div>
       <div class="dashboard__stats--see-details"> see details</div>
@@ -17,8 +17,8 @@
       <div class="dashboard__stats--info">
         <div class="icon"></div>
         <div class="stats">
-          <div class="stats__description">total customers</div>
           <div class="stats__number">77</div>
+          <div class="stats__description">total customers</div>
         </div>
       </div>
       <div class="dashboard__stats--see-details"> see details</div>
@@ -28,8 +28,8 @@
       <div class="dashboard__stats--info">
         <div class="icon"></div>
         <div class="stats">
-          <div class="stats__description">total customers</div>
           <div class="stats__number">77</div>
+          <div class="stats__description">total customers</div>
         </div>
       </div>
       <div class="dashboard__stats--see-details"> see details</div>
@@ -39,8 +39,8 @@
       <div class="dashboard__stats--info">
         <div class="icon"></div>
         <div class="stats">
-          <div class="stats__description">total customers</div>
           <div class="stats__number">77</div>
+          <div class="stats__description">total customers</div>
         </div>
       </div>
       <div class="dashboard__stats--see-details"> see details</div>
@@ -51,6 +51,7 @@
       <app-card>
         <div class="expiring-list">expiring list</div>
         <div class="data-table">
+          <div>
             <ngx-datatable
             class="material fullscreen"
             [columnMode]="ColumnMode.force"
@@ -65,56 +66,23 @@
             <ngx-datatable-column name="Type" ></ngx-datatable-column>
             <ngx-datatable-column name="Expired in "></ngx-datatable-column>
             <ngx-datatable-column name="quantity"></ngx-datatable-column>
-            <ngx-datatable-column name="Chart"></ngx-datatable-column>
           </ngx-datatable>
+          </div>
         </div>
       </app-card>
       <app-card>
         <div class="expiring-list">recent orders</div>
-        <div class="data-table">
-          <ngx-datatable
-          class="material fullscreen"
-          [columnMode]="ColumnMode.force"
-          [headerHeight]="70"
-          [footerHeight]="0"
-          [rowHeight]="50"
-          [scrollbarV]="false"
-          [scrollbarH]="false"
-          [rows]="rows"
-        >
-          <ngx-datatable-column name="Drug" ></ngx-datatable-column>
-          <ngx-datatable-column name="Type" ></ngx-datatable-column>
-          <ngx-datatable-column name="Expired in "></ngx-datatable-column>
-          <ngx-datatable-column name="quantity"></ngx-datatable-column>
-        </ngx-datatable>
-      </div>
       </app-card>
   </div>
 
-
   <div class="dashboard__store-summary">
-    <div class="monthly-progress">
-      <app-card>
-        <div class="expiring-list">expiring list</div>
-        <ngx-charts-bar-vertical-2d
-          [view]="view"
-          [scheme]="colorScheme"
-          [results]="multi"
-          [gradient]="gradient"
-          [xAxis]="showXAxis"
-          [yAxis]="showYAxis"
-          [legend]="showLegend"
-          [showXAxisLabel]="showXAxisLabel"
-          [showYAxisLabel]="showYAxisLabel"
-          [xAxisLabel]="xAxisLabel"
-          [yAxisLabel]="yAxisLabel"
-          [legendTitle]="legendTitle"
-          (select)="onSelect($event)"
-          (activate)="onActivate($event)"
-          (deactivate)="onDeactivate($event)">
-        </ngx-charts-bar-vertical-2d>
-      </app-card>
-    </div>
+    <app-card>
+      <div class="expiring-list">expiring list</div>
+    </app-card>
+    <app-card>
+      <div class="expiring-list">recent orders</div>
+    </app-card>
 </div>
 
+</div>
 
