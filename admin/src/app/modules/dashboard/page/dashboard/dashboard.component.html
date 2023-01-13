@@ -78,10 +78,14 @@
   <div class="dashboard__store-summary">
     <app-card>
       <div class="expiring-list">expiring list</div>
-      <!-- <highcharts-chart
-        [Highcharts]="Highcharts"
-        [options]="chartOptions">
-      </highcharts-chart> -->
+      <div style="display: block;">
+        <canvas baseChart width="400" height="400"
+          [type]="'line'"
+          [data]="lineChartData"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend">
+        </canvas>
+      </div>
 
     </app-card>
     <app-card>

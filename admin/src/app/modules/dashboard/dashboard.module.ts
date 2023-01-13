@@ -5,8 +5,7 @@ import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '../shared/shared.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { HighchartsChartModule } from 'highcharts-angular';
-
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     DashboardComponent
@@ -16,7 +15,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
     BrowserModule,
     SharedModule,
     NgxDatatableModule,
-    HighchartsChartModule
+    NgChartsModule
 
 
   ],
