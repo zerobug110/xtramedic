@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { ColumnMode } from '@swimlane/ngx-datatable';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  // standalone: true
 })
 
 
 export class DashboardComponent implements OnInit {
+
 
   rows: any;
   expanded = {};
@@ -16,6 +18,7 @@ export class DashboardComponent implements OnInit {
 
   ColumnMode = ColumnMode;
 
+  //chart
   constructor() {}
 
 
