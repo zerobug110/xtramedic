@@ -1,6 +1,7 @@
 import { Component, OnInit, VERSION } from '@angular/core';
 import { ColumnMode } from '@swimlane/ngx-datatable';
-import { ChartConfiguration, ChartOptions, ChartType } from "chart.js";
+import { ChartConfiguration, ChartOptions } from 'chart.js';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -18,10 +19,8 @@ export class DashboardComponent implements OnInit {
 
   ColumnMode = ColumnMode;
 
-  //chart
-  title = 'ng2-charts-demo';
-
-  public lineChartData: ChartConfiguration<'line'>['data'] = {
+  //LIne chart
+    public lineChartData: ChartConfiguration<'line'>['data'] = {
       labels: [
         'January',
         'February',
@@ -46,6 +45,20 @@ export class DashboardComponent implements OnInit {
       responsive: false
     };
     public lineChartLegend = true;
+
+
+    //pie chat
+
+  // Pie
+  public pieChartOptions: ChartOptions<'pie'> = {
+    responsive: false,
+  };
+  public pieChartLabels = [ [ 'Download', 'Sales' ], [ 'In', 'Store', 'Sales' ], 'Mail Sales' ];
+  public pieChartDatasets = [ {
+    data: [ 300, 500, 100 ]
+  } ];
+  public pieChartLegend = true;
+  public pieChartPlugins = [];
 
 
   constructor() {}
