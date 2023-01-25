@@ -5,6 +5,7 @@ import { DashboardComponent } from './modules/dashboard/page/dashboard/dashboard
 
 const routes: Routes = [
   {path: "", component: DashboardComponent}
+
 ];
 
 @NgModule({
