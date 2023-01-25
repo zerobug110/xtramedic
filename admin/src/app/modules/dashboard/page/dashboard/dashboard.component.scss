@@ -1,22 +1,24 @@
 @import '../../../../../assets/styles/_variables';
 .dashboard {
   display: grid;
-  grid-template-columns: [full-start] 0rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  0rem[full-end];
-  gap: 2rem;
-  margin-top: 3rem;
-  // overflow-y: scroll;
+  grid-template-columns: [full-start] 1rem 1fr repeat(8,[col-start] minmax(min-content, 14rem))[col-end] 1fr  1rem[full-end];
+  gap: 1rem;
+  width: 100%;
+  margin-top: 8rem;
+  // background-color: red;
+
 
   &__stats {
     grid-column: col-start 1 / col-end;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 
     &--info {
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
 
       .icon {
         width: 6rem;
@@ -60,7 +62,7 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
+    gap: 1rem;
 
     .expiring-list {
       font-size: 1.6rem;

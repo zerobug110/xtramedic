@@ -1,10 +1,13 @@
-.side-nav {
+.top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  width: 100vw;
   height: 6rem;
   padding: 0 1rem;
+  margin-bottom: 6rem;
+
 
   &__menu {
 

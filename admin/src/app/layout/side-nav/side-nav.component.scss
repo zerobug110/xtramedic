@@ -1,10 +1,12 @@
 .side-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
-  padding: 1rem;
-  height: 90vh;
+  padding: 2rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
 
 
 
@@ -19,14 +21,6 @@
     cursor: pointer;
     list-style-type: none;
   }
-
-  // .dashboard {
-  //   background-color: #5165F7;
-  //   border-radius: 1rem;
-  //   color: #FFFFFF;
-  //   padding: 0 .5rem;
-
-  // }
 
   &__list {
     display: flex;
